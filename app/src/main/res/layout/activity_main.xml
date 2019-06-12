@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BreathSounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibril"
+
+                android:text="Breath Sounds"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/trach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="tracheal"
+                android:text="Tracheal"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//trach-->
+
+            <Button
+                android:id="@+id/vesicular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="vesicular"
+                android:text="Vesicular"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//vesicular-->
+
+            <Button
+                android:id="@+id/Broncho-Vesicular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="BronchoVes"
+                android:text="Broncho Vesicular"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="OnClick" />
+            <!--//Broncho-Vesicular-->
+
+            <Button
+                android:id="@+id/Bronchial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Bronchial"
+                android:text="Bronchial"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="OnClick" /><!--Bronchial-->
+
+            <Button
+                android:id="@+id/Wheezes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Wheezes"
+                android:text="Wheezes"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Wheezes-->
+
+            <Button
+                android:id="@+id/Monophoic-Wheeze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="monophonicWz"
+                android:text="Monophoic Wheeze"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Monophoic-Wheeze-->
+
+            <Button
+                android:id="@+id/Pleural-Friction-Rub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="PleuralFrictionRub"
+                android:text="Pleural Frction Rub"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//PleuralFrictionRub-->
+
+            <Button
+                android:id="@+id/Stridor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Stridor"
+                android:text="Stridor"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Stridor-->
+
+            <Button
+                android:id="@+id/Cavernous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Cavernous"
+                android:text="Cavernous"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Cavernous-->
+
+            <Button
+                android:id="@+id/CracklesMedTofine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="CracklesMedTofine"
+                android:text="Crackles, Med. To fine"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Crackles, Med. To fine-->
+
+            <Button
+                android:id="@+id/CracklesRhonchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="CracklesRhonchi"
+                android:text="CCrackles, Rhonchi"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//CracklesRhonchi-->
+
+            <Button
+                android:id="@+id/CracklesCoarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="CracklesCoarse"
+                android:text="Crackles, Coarse"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//CracklesCoarse-->
+
+            <Button
+                android:id="@+id/PulmonaryEdema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="PulmonaryEdema"
+                android:text="Pulmonary Edema"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//PulmonaryEdema-->
+
+            <Button
+                android:id="@+id/Puppy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Puppy"
+                android:text="Puppy"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--//Puppy-->
+
+
+            <TextView
+                android:id="@+id/HeartSounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/calibril"
+                android:text="Heart Sounds"
+                android:textAlignment="center"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:paddingTop="@android:dimen/app_icon_size"/>
+            <!--Heart Sounds-->
+            <Button
+                android:id="@+id/AtrialFib"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="AtrialFib"
+                android:text="Atrial Fib"
+                android:textSize="25dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/MitralRegurgitation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="MitralRegurgitation"
+                android:text="Mitral Regurgitation"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/MitralValveClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="MitralValveClick"
+                android:text="Mitral Valve Click"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/Normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="Normal"
+                android:text="Normal"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/PDAPatentDuctusArteriosus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="PDAPatentDuctusArteriosus"
+                android:text="PDA Patent Ductus Arteriosus"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/PulmonicStenosis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="PulmonicStenosis"
+                android:text="Pulmonic Stenosis"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/RespiratoryCrackle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="RespiratoryCrackle"
+                android:text="Respiratory Crackle"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/SAS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="SAS"
+                android:text="SAS (Sub Aortic Stenosis)"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/MitralRegurgitationVPC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="MitralRegurgitationVPC"
+                android:text="Mitral Regurgitation VPC"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/VSD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="@font/calibril"
+                android:onClick="VSD"
+                android:text="VSD"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
